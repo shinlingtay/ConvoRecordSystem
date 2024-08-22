@@ -1,0 +1,159 @@
+/* Backgrounds */
+.background {
+    -fx-background-color: #fdf5e2;
+}
+
+.backgroundLogin {
+    -fx-background-image: url("/images/background_login.jpg");
+    -fx-background-size: cover;
+}
+
+/* Labels */
+.label, .label-bright, .label-header {
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-opacity: 1;
+}
+
+.label {
+    -fx-font-size: 12pt;
+    -fx-text-fill: #1135A5;
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-text-fill: #800080;
+}
+
+.label-header {
+    -fx-font-size: 20pt;
+    -fx-font-family: "System";
+    -fx-text-fill: black;
+}
+
+/* Table View */
+.table-view {
+    -fx-control-inner-background: #645215;
+    -fx-background-color: #1d1d1d;
+    -fx-padding: 5;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+}
+
+.table-view .column-header-background,
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 30;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: transparent transparent derive(-fx-base, 80%) transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 15pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+}
+
+/* Focused Table Rows */
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+/* Split Pane */
+.split-pane {
+    -fx-padding: 1 0 0 0;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #464f51;
+    -fx-background-color: transparent, derive(#464f51, 0%);
+}
+
+/* Menu Bar */
+.menu-bar {
+    -fx-background-color: derive(#464f51, 0%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Franklin Gothic Medium";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+/* Context Menu */
+.context-menu {
+    -fx-background-color: derive(#1d1d1d, 50%);
+}
+
+/* Button */
+.button {
+    -fx-padding: 10 17;
+    -fx-border-color: #1F316F;
+    -fx-background-color: #1F316F;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F9DBBA;
+    -fx-background-insets: 0;
+}
+
+.button:hover {
+    -fx-background-color: #1A4870;
+}
+
+.button:pressed {
+    -fx-border-color: #F9DBBA;
+    -fx-background-color: #F9DBBA;
+    -fx-text-fill: #1F316F;
+}
+
+.button:focused {
+    -fx-border-color: #1A4870;
+    -fx-border-width: 2;
+    -fx-border-radius: 0;
+}
+
+.button:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #000000;
+    -fx-text-fill: #F9DBBA;
+}
+
+.button:default, .button:default:hover {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #F9DBBA;
+    -fx-background-color: derive(-fx-focus-color, 30%);
+}
+
+/* Dialog Pane */
+.dialog-pane {
+    -fx-background-color: black;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: white;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color: black;
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-style: italic;
+    -fx-font-size: 2em;
+}
+
+/* VBox */
+.vbox {
+    -fx-padding: 160 0 0 0;
+}
+
+.vbox_value {
+    -fx-padding: 160 0 0 50;
+}

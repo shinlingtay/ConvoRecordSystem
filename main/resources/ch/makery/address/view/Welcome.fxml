@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="484.0" prefWidth="726.0" styleClass="background"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ch.makery.address.view.WelcomeController">
+    <children>
+        <AnchorPane layoutY="53.0" prefHeight="67.0" style="-fx-background-color: #CCBA78;"
+                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Text layoutX="278.0" layoutY="31.0" text="Sunway University" style="-fx-font-size: 24px; -fx-font-family: 'Franklin Gothic Medium';"/>
+                <Text layoutX="250.0" layoutY="55.0" text="Convocation Record System" style="-fx-font-size: 20px; -fx-font-family: 'Franklin Gothic Medium Italic';"/>
+                <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="164.0" layoutY="7.0" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../images/sunwayuni_logo.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+
+        <Button layoutY="70.0" onAction="#goToStudent" prefHeight="45.0" prefWidth="182.0" text="Students" textFill="WHITE"
+                style="-fx-background-color: #645215; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 3px; -fx-font-size: 18px; -fx-font-weight: bold;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="67.0"/>
+
+        <Button layoutX="98.0" layoutY="242.0" onAction="#goToEvent" prefHeight="45.0" prefWidth="182.0" text="Event" textFill="WHITE"
+                style="-fx-background-color: #645215; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 3px; -fx-font-size: 18px; -fx-font-weight: bold;" AnchorPane.leftAnchor="181.0" AnchorPane.topAnchor="67.0"/>
+
+        <Button layoutX="328.0" layoutY="84.0" onAction="#goToAbsence" prefHeight="45.0" prefWidth="182.0" text="Absence" textFill="WHITE"
+                style="-fx-background-color: #645215; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 3px; -fx-font-size: 18px; -fx-font-weight: bold;" AnchorPane.rightAnchor="181.0" AnchorPane.topAnchor="67.0"/>
+
+        <Button layoutX="338.0" layoutY="94.0" onAction="#goToLogin" prefHeight="45.0" prefWidth="181.0" text="Logout" textFill="WHITE"
+                style="-fx-background-color: #645215; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 3px; -fx-font-size: 18px; -fx-font-weight: bold;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="67.0"/>
+
+        <Text layoutX="275.0" layoutY="196.0" fill="#1135a5" text="Dear Graduate Admin!" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+        <Text layoutX="185.0" layoutY="230.0" fill="#1135a5" text="1. Add graduates for 2020/04 term via &quot;Student&quot; tab." textAlignment="CENTER" wrappingWidth="441.46"
+              style="-fx-font-size: 18px; -fx-font-style: italic;"/>
+        <Text layoutX="163.0" layoutY="270.0" fill="#1135a5" text="2. Inform relevant speakers for the convocation." textAlignment="CENTER" wrappingWidth="441.46"
+              style="-fx-font-size: 18px; -fx-font-style: italic;"/>
+        <Text layoutX="149.0" layoutY="310.0" fill="#1135a5" text="3. View and edit events in &quot;Event&quot; page." textAlignment="CENTER" wrappingWidth="400.46"
+              style="-fx-font-size: 18px; -fx-font-style: italic;"/>
+        <Text layoutX="178.0" layoutY="350.0" fill="#1135a5" text="4. View Graduate(s) absence in &quot;Absence&quot; page." textAlignment="CENTER" wrappingWidth="400.46"
+              style="-fx-font-size: 18px; -fx-font-style: italic;"/>
+
+        <ImageView fitHeight="108.0" fitWidth="106.0" layoutX="48.0" layoutY="230.0" preserveRatio="true">
+            <image>
+                <Image url="@../../../../images/icon.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
